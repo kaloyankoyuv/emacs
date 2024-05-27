@@ -1,4 +1,4 @@
-(dolist (my-package-list '(yasnippet vertico marginalia orderless corfu ef-themes))
+(dolist (my-package-list '(yasnippet vertico marginalia orderless corfu modus-themes))
   (unless (package-installed-p my-package-list)
     (package-install my-package-list)))
 
@@ -43,7 +43,7 @@
 (global-corfu-mode)
 
 (add-to-list 'default-frame-alist '(font . "Source Code Pro-10"))
-(load-theme 'ef-dream t)
+(load-theme 'modus-vivendi t)
 
 (load custom-file)
 
