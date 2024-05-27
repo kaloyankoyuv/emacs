@@ -2,19 +2,13 @@
   (unless (package-installed-p my-package-list)
     (package-install my-package-list)))
 
-(defun ts-mode-init ()
+(defun prog-mode-init ()
   (display-line-numbers-mode)
   (hl-line-mode)
   (eglot-ensure)
   (add-hook 'before-save-hook 'eglot-format nil t))
 
-(add-to-list 'major-mode-remap-alist '(c-mode . c-ts-mode))
-(add-to-list 'major-mode-remap-alist '(c++-mode . c++-ts-mode))
-(add-to-list 'major-mode-remap-alist '(c-or-c++-mode . c-or-c++-ts-mode))
-
-(add-hook 'c-ts-mode-hook 'ts-mode-init)
-(add-hook 'c++-ts-mode-hook 'ts-mode-init)
-(add-hook 'c-or-c++-ts-mode-hook 'ts-mode-init)
+(add-hook 'c++-mode-hook 'prog-mode-init)
 
 (setq
  make-backup-files nil
@@ -28,8 +22,6 @@
  scroll-margin 5
  scroll-conservatively 1000
  
- treesit-font-lock-level 4
-
  project-vc-merge-submodules nil
  
  custom-file "~/.config/emacs/custom.el"
