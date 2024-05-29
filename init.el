@@ -16,9 +16,6 @@
  ring-bell-function 'ignore
  inhibit-startup-screen t
  
- tab-bar-new-button-show nil
- tab-bar-close-button-show nil
- 
  scroll-margin 5
  scroll-conservatively 1000
  
@@ -37,7 +34,6 @@
 (tool-bar-mode 0)
 (scroll-bar-mode 0)
 (blink-cursor-mode 0)
-(tab-bar-mode)
 
 (electric-pair-mode)
 
