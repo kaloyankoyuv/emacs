@@ -1,4 +1,4 @@
-(dolist (my-package-list '(yasnippet vertico marginalia orderless corfu modus-themes))
+(dolist (my-package-list '(yasnippet modus-themes))
   (unless (package-installed-p my-package-list)
     (package-install my-package-list)))
 
@@ -23,11 +23,14 @@
  scroll-conservatively 1000
  
  project-vc-merge-submodules nil
+
+ completion-show-help nil
+ completions-max-height 20
+ completion-auto-select 'second-tab
+ completions-format 'one-column
+ completion-auto-help 'always
  
  custom-file "~/.config/emacs/custom.el"
- 
- completion-styles '(orderless basic)
- completion-category-overrides '((file (styles basic partial-completion)))
  )
 
 (menu-bar-mode 0)
@@ -37,10 +40,6 @@
 (tab-bar-mode)
 
 (electric-pair-mode)
-
-(vertico-mode)
-(marginalia-mode)
-(global-corfu-mode)
 
 (add-to-list 'default-frame-alist '(font . "Source Code Pro-10"))
 (load-theme 'modus-vivendi t)
