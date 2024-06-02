@@ -1,4 +1,4 @@
-(dolist (my-package-list '(yasnippet modus-themes))
+(dolist (my-package-list '(yasnippet))
   (unless (package-installed-p my-package-list)
     (package-install my-package-list)))
 
