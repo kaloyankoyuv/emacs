@@ -21,6 +21,8 @@
  
  project-vc-merge-submodules nil
 
+ dired-listing-switches "-agGh --group-directories-first"
+
  completion-show-help nil
  completions-max-height 20
  completion-auto-select 'second-tab
