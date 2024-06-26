@@ -19,8 +19,6 @@
  scroll-margin 5
  scroll-conservatively 1000
  
- project-vc-merge-submodules nil
-
  completion-show-help nil
  completions-max-height 20
  completion-auto-select 'second-tab
@@ -37,7 +35,7 @@
 
 (electric-pair-mode)
 
-(add-to-list 'default-frame-alist '(font . "Source Code Pro-10"))
+(add-to-list 'default-frame-alist '(font . "CaskaydiaCove Nerd Font-10"))
 (load-theme 'modus-vivendi t)
 
 (load custom-file)
