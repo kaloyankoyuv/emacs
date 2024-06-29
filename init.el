@@ -35,7 +35,7 @@
 
 (electric-pair-mode)
 
-(add-to-list 'default-frame-alist '(font . "CaskaydiaCove Nerd Font-10"))
+(add-to-list 'default-frame-alist '(font . "Liberation Mono-10"))
 (load-theme 'modus-vivendi t)
 
 (load custom-file)
